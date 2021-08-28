@@ -1,21 +1,16 @@
 import java.io.File
-import java.util.concurrent.Executors
 
 object Main {
 
     // Config Layouts, add tools:viewBindingIgnore="true" to the xml
-    private val LAYOUT_DIRS = arrayOf("app/src/main/res/layout/", "business/src/main/res/layout/")
-
-    private val executor = Executors.newFixedThreadPool(4)
+    private val LAYOUT_DIRS = arrayOf("app/src/main/res/layout/")
 
     @JvmStatic
     fun main(arg: Array<String>) {
         getXmlFileList()
             .forEach {
                 if (it.exists()) {
-                    executor.execute {
-                        ViewBindingHandler.handle(it)
-                    }
+                    ViewBindingHandler.handle(it)
                 }
             }
     }

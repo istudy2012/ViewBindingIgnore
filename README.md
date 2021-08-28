@@ -41,7 +41,15 @@ android {
 
 详细可以参考具体的实现ViewBindingHandler.kt
 
+## 使用说明
 
+调整Main里的LAYOUT_DIRS, 支持单xml 和 xml目录, 运行即可
+
+生成的xml格式较差, 如下所示
+![](img/xml_unformat.png)
+
+因此需要在 layout目录->右键->选择Reformat Code
+![](img/xml_format.png)
 
 ## 说明
 
