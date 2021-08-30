@@ -57,8 +57,6 @@ android {
 
    https://cs.android.com/android-studio/platform/tools/adt/idea/+/mirror-goog-studio-main:android/src/com/android/tools/idea/databinding/index/BindingXmlIndex.kt;l=159
 
-2. I first choose use Python and use xml.dom.minidom module, but pycharm and vscode can not code complement
-
-   首选是使用Python，使用xml.dom.minidom module, 但是发现pycharm和vscode无法代码补全, 就放弃了
-
-    https://youtrack.jetbrains.com/issue/PY-46355
+2. 首选是使用Python，使用xml.dom.minidom module, 但是发现pycharm和vscode无法代码补全, 就放弃了
+   
+   https://youtrack.jetbrains.com/issue/PY-46355
